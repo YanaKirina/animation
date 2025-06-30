@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainHeader></MainHeader>
+  <AppNavigation></AppNavigation>
+  <InteractiveErpIntro></InteractiveErpIntro>
+  <HaveQuestions></HaveQuestions>
+  <EconomicEffectSection />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainHeader from './components/MainHeader.vue';
+import AppNavigation from './components/AppNavigation.vue';
+import InteractiveErpIntro from './components/InteractiveErpIntro.vue';
+import HaveQuestions from './components/HaveQuestions.vue'
+import EconomicEffectSection from './components/EconomicEffectSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainHeader,
+    AppNavigation,
+    InteractiveErpIntro,
+    HaveQuestions,
+    EconomicEffectSection
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
